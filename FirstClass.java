@@ -45,9 +45,22 @@ class FirstClass {
         boolean isOfAge = true;
         char letter = '#';
 
+        final double PI = 3.14159265359; // final keyword acts a constant
+        System.out.println(PI);
+
+        // conversion character
         System.out.printf("%d %d %d\n",num1, num2, bignum);
         System.out.printf("%f %f\n", dec1, dec2);
-        System.out.printf("%b %c", isOfAge, letter);
+        System.out.printf("%b %c\n", isOfAge, letter);
+
+        // width
+        System.out.printf("Hello %10s\n",letter);
+
+        // precision
+        System.out.printf("%.3f\n",dec2);
+
+        // flags
+        System.out.printf("%+,d",bignum);
 
     }
 }
